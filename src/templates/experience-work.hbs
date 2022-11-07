@@ -1,17 +1,33 @@
-<li class='experiance__stile-container'>
-  <h4 class='experience__style-listtop'>{{position}}
-    <span class='name__comp'>{{nameCompany}}
-    </span>
+<li class='experiance__stile-container accordion-item'>
+  <h4 class='experience__style-listtop accordion-header' id="flush-headingOne>
+    <button
+      class="accordion-button collapsed"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#flush-{{id}}"
+      aria-expanded="false"
+      aria-controls="flush-{{id}}"
+    >{{position}}<span class='name__comp'>{{nameCompany}}</span>
+    </button>
   </h4>
-  <p class='experience__date'>{{startDurationWork}}
-    -
-    {{endDurationWork}}
-    <span class='line'>|</span>
-    {{city}},
-    {{country}}</p>
-  <ul class='experience__style-list'>
-    {{#each this.responsibilities}}
-      <li>{{this}}</li>
-    {{/each}}
-  </ul>
+  <div
+    id="flush-{{id}}"
+    class="accordion-collapse collapse"
+    aria-labelledby="flush-{{id}}"
+    data-bs-parent="#accordionFlushExample"
+  >
+    <div class="accordion-body">
+      <p class='experience__date'>{{startDurationWork}}
+      -
+      {{endDurationWork}}
+      <span class='line'>|</span>
+      {{city}},
+      {{country}}</p>
+      <ul class='experience__style-list'>
+        {{#each this.responsibilities}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>          
+  </div>
 </li>

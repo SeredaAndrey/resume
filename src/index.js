@@ -1,3 +1,5 @@
+import * as bootstrap from 'bootstrap';
+
 import refs from './js/refs';
 import CreateMarkup from './js/createmarkup';
 
@@ -55,3 +57,5 @@ const createMarkupTechSkils = new CreateMarkup(
   techskils,
   dataResume.skils.tech
 ).insertMarkup();
+
+//

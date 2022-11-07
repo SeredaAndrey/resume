@@ -1,11 +1,13 @@
 <li>
   <span class='experience__list'>
     <a class='project__linc' href={{link}}>{{name}}
-      <span class='bracket'>[</span>
-      {{#each tech}}
-        {{this}},
-      {{/each}}
-      <span class='bracket'>]</span>
+      <div class='experience__container'>
+        <span class='bracket'>[</span>
+        {{#each tech}}
+          {{this}},
+        {{/each}}
+        <span class='bracket'>]</span>
+      </div>
     </a>
   </span>
 </li>

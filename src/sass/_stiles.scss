@@ -68,7 +68,14 @@ ul {
 /* Experience styles */
 .experience {
   margin-bottom: 50px;
+  padding-right: 40px;
+  &__container {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+  }
   &__list {
+    // display: flex;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -149,6 +156,8 @@ ul {
 }
 
 .project__linc {
+  display: flex;
+
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
