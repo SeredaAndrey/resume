@@ -1,0 +1,17 @@
+<li class='experiance__stile-container'>
+  <h4 class='experience__style-listtop'>{{position}}
+    <span class='name__comp'>{{nameCompany}}
+    </span>
+  </h4>
+  <p class='experience__date'>{{startDurationWork}}
+    -
+    {{endDurationWork}}
+    <span class='line'>|</span>
+    {{city}},
+    {{country}}</p>
+  <ul class='experience__style-list'>
+    {{#each this.responsibilities}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+</li>
