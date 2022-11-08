@@ -2,9 +2,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 24px;
 }
-ul {
-  list-style-type: none;
-}
 
 /* main styles */
 .main {
@@ -15,6 +12,7 @@ ul {
   width: 1200px;
   margin: 0 auto;
   &__content {
+    width: 830px;
     background-color: #ffffff;
     padding-left: 40px;
     margin-top: 40px;
@@ -66,6 +64,41 @@ ul {
   }
 }
 /* Experience styles */
+#accordionFlushExample {
+  margin: 20px;
+  padding: 0;
+}
+#accordionFlushExample > li {
+  padding-left: 8px;
+  border: none;
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.accordion-header.collapsed {
+  .bi-chevron-compact-up {
+    display: none;
+  }
+  .bi-chevron-compact-down {
+    margin-left: auto;
+    display: block;
+    margin-right: 20px;
+    font-size: 2rem;
+  }
+}
+.accordion-header:not(.collapsed) {
+  .bi-chevron-compact-up {
+    margin-left: auto;
+    display: block;
+    margin-right: 20px;
+    font-size: 2rem;
+  }
+  .bi-chevron-compact-down {
+    display: none;
+  }
+}
+
 .experience {
   margin-bottom: 50px;
   padding-right: 40px;
@@ -78,7 +111,7 @@ ul {
     // display: flex;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
     color: #595959;
   }
@@ -102,6 +135,7 @@ ul {
     &-container {
       margin: 0;
       padding: 0;
+      border: none;
     }
     &-top {
       margin-top: 0;
@@ -114,6 +148,8 @@ ul {
       color: #000000;
     }
     &-listtop {
+      display: flex;
+
       margin-top: 0;
       margin-bottom: 10px;
 
@@ -123,16 +159,21 @@ ul {
     }
     &-list {
       margin-top: 0;
-      margin-bottom: 0;
+      // margin-bottom: 0;
       margin-left: 18px;
 
       padding: 0;
 
+      // list-style-type: none;
+
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 24px;
       color: #595959;
+      & > li:not(:last-child) {
+        margin-bottom: 4px;
+      }
     }
   }
 }
@@ -161,7 +202,7 @@ ul {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   color: #595959;
   margin-left: 10px;
@@ -173,6 +214,7 @@ ul {
 }
 
 .name__comp {
+  margin-left: 5px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;

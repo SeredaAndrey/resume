@@ -140,7 +140,7 @@ export default dataResume = {
     {
       id: 3,
       nameCompany: `Building hypermarket OBI`,
-      position: 'Head of the warehouse and product display of the hypermarket',
+      position: 'Head of the warehouse and product display',
       startDurationWork: 'October 2009',
       endDurationWork: 'September 2010',
       city: 'Mariupol',
@@ -153,7 +153,7 @@ export default dataResume = {
     },
     {
       id: 2,
-      nameCompany: `LCC "StroyAsovService LTD"`,
+      nameCompany: `LCC "SAS LTD"`,
       position: 'Head of the construction site, Chief Engineer, Director',
       startDurationWork: 'February 2003',
       endDurationWork: 'March 2009',
