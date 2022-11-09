@@ -15,17 +15,17 @@ import techskils from './templates/techskils.hbs';
 const insertName = new CreateMarkup(
   refs.name,
   '',
-  dataResume.name
+  dataResume.en.name
 ).insertOtherData();
 const insertProfesion = new CreateMarkup(
   refs.profesion,
   '',
-  dataResume.profesion
+  dataResume.en.profesion
 ).insertOtherData();
 const insertDescription = new CreateMarkup(
   refs.description,
   '',
-  dataResume.description
+  dataResume.en.description
 ).insertOtherData();
 const createMarkupExperienceProject = new CreateMarkup(
   refs.experienceProjekt,
@@ -35,27 +35,27 @@ const createMarkupExperienceProject = new CreateMarkup(
 const createMarkupExperienceWork = new CreateMarkup(
   refs.experienceWork,
   experienceWork,
-  dataResume.experienceWork
+  dataResume.en.experienceWork
 ).insertMarkup();
 const createMarkupEducation = new CreateMarkup(
   refs.education,
   educations,
-  dataResume.education
+  dataResume.en.education
 ).insertMarkup();
 const createMarkupContacts = new CreateMarkup(
   refs.contacts,
   contacts,
-  dataResume.contacts
+  dataResume.en.contacts
 ).insertMarkup();
 const createMarkupSoftSkils = new CreateMarkup(
   refs.softSkils,
   softskils,
-  dataResume.skils.soft
+  dataResume.en.skils.soft
 ).insertMarkup();
 const createMarkupTechSkils = new CreateMarkup(
   refs.techSkils,
   techskils,
-  dataResume.skils.tech
+  dataResume.en.skils.tech
 ).insertMarkup();
 
 //

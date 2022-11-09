@@ -13,6 +13,7 @@ export default class CreateMarkup {
   }
   createMarkup() {
     const markup = [];
+    console.log(this.datas);
     for (const data of this.datas) {
       markup.push(this.templates(data));
     }
