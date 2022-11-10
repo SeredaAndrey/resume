@@ -232,7 +232,7 @@ export default dataResume = {
         'Simplify3D, RepetierHost',
         'AutoCAD, Inventor',
       ],
-      soft: ['Scrum', 'Scrum', 'GTD', 'Teamwork'],
+      soft: ['Scrum', 'GTD', 'Teamwork'],
     },
   },
   ua: {
@@ -467,7 +467,7 @@ export default dataResume = {
         'Simplify3D, RepetierHost',
         'AutoCAD, Inventor',
       ],
-      soft: ['Scrum', 'Scrum', 'GTD', 'Teamwork'],
+      soft: ['Scrum', 'GTD', 'Teamwork'],
     },
   },
 };
