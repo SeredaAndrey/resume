@@ -177,9 +177,6 @@ body {
     }
   }
 }
-.education__style-top {
-  margin-top: 40px;
-}
 
 .bracket {
   font-style: normal;
@@ -222,6 +219,21 @@ body {
   color: #fb6d3a;
 }
 
+.education__style-top {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+}
+.education__name {
+  color: #fb6d3a;
+  font-size: 16px;
+  font-weight: 700px;
+}
 .education {
   &__list {
     padding: 0;
@@ -235,11 +247,7 @@ body {
     line-height: 24px;
     color: #595959;
   }
-  &__name {
-    color: #fb6d3a;
-    font-size: 16px;
-    font-weight: 700px;
-  }
+
   &__prof {
     color: #000000;
     font-style: normal;

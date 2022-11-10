@@ -30,7 +30,7 @@ const insertDescription = new CreateMarkup(
 const createMarkupExperienceProject = new CreateMarkup(
   refs.experienceProjekt,
   experienceProject,
-  dataResume.experienceProject
+  dataResume.en.experienceProject
 ).insertMarkup();
 const createMarkupExperienceWork = new CreateMarkup(
   refs.experienceWork,
