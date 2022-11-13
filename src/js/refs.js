@@ -1,4 +1,4 @@
-export default refs = {
+const refs = {
   name: document.querySelector('#name'),
   profesion: document.querySelector('#profesion'),
   description: document.querySelector('#description'),
@@ -8,4 +8,6 @@ export default refs = {
   techSkils: document.querySelector('#techSkils'),
   softSkils: document.querySelector('#softSkils'),
   contacts: document.querySelector('#contacts'),
+  languageSwitcher: document.querySelector('.form-check-input'),
 };
+export default refs;

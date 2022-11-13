@@ -1,12 +1,23 @@
-export default dataResume = {
+const dataResume = {
   id: 1,
-  en: {
-    name: 'Andrii Sereda',
-    profesion: 'Front-End Developer, Hardware developer',
-    description: `Full cycle of device development, microcontroller firmware, printed
+  name: {
+    en: 'Andrii Sereda',
+    ua: 'Андрій Середа',
+  },
+  profesion: {
+    en: 'Front-End Developer, Hardware developer',
+    ua: 'Front-End Developer, Hardware developer',
+  },
+  description: {
+    en: `Full cycle of device development, microcontroller firmware, printed
         circuit boards of devices, design and development of radio component
         cases. Website development and support.`,
-    contacts: [
+    ua: `Повний цикл розробки приладів, програмування мікроконтроллерів, виготовлення друкованих 
+        плат приладів, моделювання та виготовлення на 3д принтері корпусів радіоелектронних компоннтів.
+        Розробка вебсайтів та їх підтримка.`,
+  },
+  contacts: {
+    en: [
       {
         name: 'telephone',
         shotName: 'T:',
@@ -26,7 +37,29 @@ export default dataResume = {
         href: 'http://195.72.145.106',
       },
     ],
-    experienceProject: [
+    ua: [
+      {
+        name: 'telephone',
+        shotName: 'T:',
+        title: '+3-8-067-621-00-56',
+        href: 'tel:+380676210056',
+      },
+      {
+        name: 'email',
+        shotName: 'M:',
+        title: 'a.a.sereda@ukr.net',
+        href: 'mailto:a.a.sereda@ukr.net',
+      },
+      {
+        name: 'web-site',
+        shotName: 'S:',
+        title: 'web site резюме',
+        href: 'http://195.72.145.106',
+      },
+    ],
+  },
+  experienceProject: {
+    en: [
       {
         id: 1,
         name: 'Incubator control unit v5.0.4',
@@ -70,7 +103,53 @@ export default dataResume = {
         link: 'https://github.com/SeredaAndrey/hot-panel-v2.0-with-MQTT-with-MQTTcontroling',
       },
     ],
-    experienceWork: [
+    ua: [
+      {
+        id: 1,
+        name: 'Блок управління інкубатором v5.0.4',
+        tech: ['C++', 'ArduinoIDE'],
+        link: 'https://github.com/SeredaAndrey/rab_prog_incubator_V5_0_4',
+      },
+      {
+        id: 2,
+        name: 'Блок управління інкубатором V6.2 mini',
+        tech: ['C++', 'ArduinoIDE'],
+        link: 'https://github.com/SeredaAndrey/rab_prog_incubator_V6_2_mini_NOT_PID_engl',
+      },
+      {
+        id: 3,
+        name: 'Контроллер управління теплою підлогою v2.0 with MQTT',
+        tech: ['C++', 'ArduinoIDE'],
+        link: 'https://github.com/SeredaAndrey/controller_hot_flore-v2.0-with-MQTT',
+      },
+      {
+        id: 4,
+        name: 'Контроллер управлюння котлом v2.0 with MQTT',
+        tech: ['C++', 'ArduinoIDE', 'HTML'],
+        link: 'https://github.com/SeredaAndrey/controller_for_boller-v2.0-with-MQTT-and-DS18b20',
+      },
+      {
+        id: 5,
+        name: 'Кiмнатний температурний контроллер v2.0 with MQTT TM1637',
+        tech: ['C++', 'ArduinoIDE', 'HTML'],
+        link: 'https://github.com/SeredaAndrey/room-controller-v2.0-with-MQTT-DS18b20-and-TM1637',
+      },
+      {
+        id: 6,
+        name: 'Кiмнатний температурний контроллер v2.0 with MQTT OLED',
+        tech: ['C++', 'ArduinoIDE', 'HTML'],
+        link: 'https://github.com/SeredaAndrey/room_controller-v2.0-with-MQTT-DS18b20-and-OLED',
+      },
+      {
+        id: 7,
+        name: 'Контроллер управління радіатором опалення v2.0 with MQTT',
+        tech: ['C++', 'ArduinoIDE', 'HTML'],
+        link: 'https://github.com/SeredaAndrey/hot-panel-v2.0-with-MQTT-with-MQTTcontroling',
+      },
+    ],
+  },
+  experienceWork: {
+    en: [
       {
         id: 8,
         nameCompany: `LCC "LMMP"`,
@@ -181,131 +260,7 @@ export default dataResume = {
         ],
       },
     ],
-    education: [
-      {
-        id: 1,
-        name: 'Priasov State Technical University (PSTU)',
-        profession: 'Сivil engineer, industrial civil engineering',
-        startDurationEdu: 'September 1996',
-        endDurationEdu: 'June 2002',
-        country: 'Ukraine',
-        city: 'Mariupol',
-      },
-      {
-        id: 2,
-        name: 'EDU.GENIUS.SPACE',
-        profession: 'Profession Project manager 10.0',
-        startDurationEdu: 'May 2022',
-        endDurationEdu: 'June 2022',
-        country: 'Ukraine',
-        city: 'Lviv',
-      },
-      {
-        id: 3,
-        name: 'GoIT',
-        profession: 'Full stack developer. HTML+CSS 1.0',
-        startDurationEdu: 'June 2022',
-        endDurationEdu: 'August 2022',
-        country: 'Ukraine',
-        city: 'Lviv',
-      },
-      {
-        id: 4,
-        name: 'GoIT',
-        profession: 'Full stack developer. JavaScript 2.0',
-        startDurationEdu: 'August 2022',
-        endDurationEdu: 'November 2022',
-        country: 'Ukraine',
-        city: 'Lviv',
-      },
-    ],
-    skils: {
-      tech: [
-        'HTML, CSS (SCSS)',
-        'GIT',
-        'WebPack, Parcel',
-        'JavaScript',
-        'React.js',
-        'Node.js',
-        'C++ (ArduinoIDE)',
-        'Spring Layout',
-        'Simplify3D, RepetierHost',
-        'AutoCAD, Inventor',
-      ],
-      soft: ['Scrum', 'GTD', 'Teamwork'],
-    },
-  },
-  ua: {
-    name: 'Андрій Середа',
-    profesion: 'Front-End Developer, Hardware developer',
-    description: `Повний цикл розробки приладів, програмування мікроконтроллерів, виготовлення друкованих 
-        плат приладів, моделювання та виготовлення на 3д принтері корпусів радіоелектронних компоннтів.
-        Розробка вебсайтів та їх підтримка.`,
-    contacts: [
-      {
-        name: 'telephone',
-        shotName: 'T:',
-        title: '+3-8-067-621-00-56',
-        href: 'tel:+380676210056',
-      },
-      {
-        name: 'email',
-        shotName: 'M:',
-        title: 'a.a.sereda@ukr.net',
-        href: 'mailto:a.a.sereda@ukr.net',
-      },
-      {
-        name: 'web-site',
-        shotName: 'S:',
-        title: 'web site резюме',
-        href: 'http://195.72.145.106',
-      },
-    ],
-    experienceProject: [
-      {
-        id: 1,
-        name: 'Блок управління інкубатором v5.0.4',
-        tech: ['C++', 'ArduinoIDE'],
-        link: 'https://github.com/SeredaAndrey/rab_prog_incubator_V5_0_4',
-      },
-      {
-        id: 2,
-        name: 'Блок управління інкубатором V6.2 mini',
-        tech: ['C++', 'ArduinoIDE'],
-        link: 'https://github.com/SeredaAndrey/rab_prog_incubator_V6_2_mini_NOT_PID_engl',
-      },
-      {
-        id: 3,
-        name: 'Контроллер управління теплою підлогою v2.0 with MQTT',
-        tech: ['C++', 'ArduinoIDE'],
-        link: 'https://github.com/SeredaAndrey/controller_hot_flore-v2.0-with-MQTT',
-      },
-      {
-        id: 4,
-        name: 'Контроллер управлюння котлом v2.0 with MQTT',
-        tech: ['C++', 'ArduinoIDE', 'HTML'],
-        link: 'https://github.com/SeredaAndrey/controller_for_boller-v2.0-with-MQTT-and-DS18b20',
-      },
-      {
-        id: 5,
-        name: 'Комнатний температурний контроллер v2.0 with MQTT TM1637',
-        tech: ['C++', 'ArduinoIDE', 'HTML'],
-        link: 'https://github.com/SeredaAndrey/room-controller-v2.0-with-MQTT-DS18b20-and-TM1637',
-      },
-      {
-        id: 6,
-        name: 'Комнатний температурний контроллер v2.0 with MQTT OLED',
-        tech: ['C++', 'ArduinoIDE', 'HTML'],
-        link: 'https://github.com/SeredaAndrey/room_controller-v2.0-with-MQTT-DS18b20-and-OLED',
-      },
-      {
-        id: 7,
-        name: 'Контроллер управління радіатором опалення v2.0 with MQTT',
-        tech: ['C++', 'ArduinoIDE', 'HTML'],
-        link: 'https://github.com/SeredaAndrey/hot-panel-v2.0-with-MQTT-with-MQTTcontroling',
-      },
-    ],
-    experienceWork: [
+    ua: [
       {
         id: 8,
         nameCompany: `ТОВ "ЛММП"`,
@@ -416,7 +371,47 @@ export default dataResume = {
         ],
       },
     ],
-    education: [
+  },
+  education: {
+    en: [
+      {
+        id: 1,
+        name: 'Priasov State Technical University (PSTU)',
+        profession: 'Сivil engineer, industrial civil engineering',
+        startDurationEdu: 'September 1996',
+        endDurationEdu: 'June 2002',
+        country: 'Ukraine',
+        city: 'Mariupol',
+      },
+      {
+        id: 2,
+        name: 'EDU.GENIUS.SPACE',
+        profession: 'Profession Project manager 10.0',
+        startDurationEdu: 'May 2022',
+        endDurationEdu: 'June 2022',
+        country: 'Ukraine',
+        city: 'Lviv',
+      },
+      {
+        id: 3,
+        name: 'GoIT',
+        profession: 'Full stack developer. HTML+CSS 1.0',
+        startDurationEdu: 'June 2022',
+        endDurationEdu: 'August 2022',
+        country: 'Ukraine',
+        city: 'Lviv',
+      },
+      {
+        id: 4,
+        name: 'GoIT',
+        profession: 'Full stack developer. JavaScript 2.0',
+        startDurationEdu: 'August 2022',
+        endDurationEdu: 'November 2022',
+        country: 'Ukraine',
+        city: 'Lviv',
+      },
+    ],
+    ua: [
       {
         id: 1,
         name: 'Прифзовський технічний державний універсітет (ПДТУ)',
@@ -454,8 +449,10 @@ export default dataResume = {
         city: 'Львів',
       },
     ],
-    skils: {
-      tech: [
+  },
+  skils: {
+    tech: {
+      en: [
         'HTML, CSS (SCSS)',
         'GIT',
         'WebPack, Parcel',
@@ -467,7 +464,23 @@ export default dataResume = {
         'Simplify3D, RepetierHost',
         'AutoCAD, Inventor',
       ],
-      soft: ['Scrum', 'GTD', 'Teamwork'],
+      ua: [
+        'HTML, CSS (SCSS)',
+        'GIT',
+        'WebPack, Parcel',
+        'JavaScript',
+        'React.js',
+        'Node.js',
+        'C++ (ArduinoIDE)',
+        'Spring Layout',
+        'Simplify3D, RepetierHost',
+        'AutoCAD, Inventor',
+      ],
+    },
+    soft: {
+      en: ['Scrum', 'GTD', 'Teamwork'],
+      ua: ['Scrum', 'GTD', 'Teamwork'],
     },
   },
 };
+export default dataResume;
