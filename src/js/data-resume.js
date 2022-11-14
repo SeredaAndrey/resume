@@ -102,6 +102,12 @@ const dataResume = {
         tech: ['C++', 'ArduinoIDE', 'HTML'],
         link: 'https://github.com/SeredaAndrey/hot-panel-v2.0-with-MQTT-with-MQTTcontroling',
       },
+      {
+        id: 8,
+        name: 'This resume project',
+        tech: ['HTML', 'CSS', 'JS'],
+        link: 'https://github.com/SeredaAndrey/resume',
+      },
     ],
     ua: [
       {
@@ -145,6 +151,12 @@ const dataResume = {
         name: 'Контроллер управління радіатором опалення v2.0 with MQTT',
         tech: ['C++', 'ArduinoIDE', 'HTML'],
         link: 'https://github.com/SeredaAndrey/hot-panel-v2.0-with-MQTT-with-MQTTcontroling',
+      },
+      {
+        id: 8,
+        name: 'Проєкт цього резюме',
+        tech: ['HTML', 'CSS', 'JS'],
+        link: 'https://github.com/SeredaAndrey/resume',
       },
     ],
   },
@@ -346,7 +358,7 @@ const dataResume = {
       {
         id: 2,
         nameCompany: `ТОВ "SAS LTD"`,
-        position: 'Начальник будівельної дільниці, головний інженер, директор',
+        position: 'Нач.будівельної дільниці, гол.інженер, директор',
         startDurationWork: 'Лютий 2003',
         endDurationWork: 'Березень 2009',
         city: 'Маріуполь',
