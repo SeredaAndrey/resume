@@ -16,8 +16,10 @@ const createMarkup = new CreateMarkup();
 
 refs.languageSwitcher.addEventListener('input', event => {
   if (!event.target.checked) {
+    refs.languageLabel.textContent = 'switch to UA';
     createMarkup.insertLanguage('en');
   } else {
+    refs.languageLabel.textContent = 'перемкнути на EN';
     createMarkup.insertLanguage('ua');
   }
   clearMarkup();
@@ -27,6 +29,7 @@ loadMarkup();
 
 function loadMarkup() {
   createMarkup.insertOtherData(refs.name, dataResume.name);
+  createMarkup.insertPhoto(refs.photo, dataResume.photo);
   createMarkup.insertOtherData(refs.profesion, dataResume.profesion);
   createMarkup.insertOtherData(refs.description, dataResume.description);
   createMarkup.insertMarkup(

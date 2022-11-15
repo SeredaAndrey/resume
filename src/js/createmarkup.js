@@ -1,9 +1,7 @@
 export default class CreateMarkup {
   constructor() {
     this.language = 'en';
-    this.refs = null;
     this.templates = null;
-    this.datas = null;
   }
 
   insertLanguage(language) {
@@ -11,18 +9,16 @@ export default class CreateMarkup {
   }
 
   insertMarkup(refs, datas, templates) {
-    this.refs = refs;
     this.templates = templates;
-    this.datas = datas;
     if (this.language === 'en') {
-      this.refs.insertAdjacentHTML(
+      refs.insertAdjacentHTML(
         'beforeend',
-        this.createMarkup(this.templates, this.datas.en)
+        this.createMarkup(this.templates, datas.en)
       );
     } else if (this.language === 'ua') {
-      this.refs.insertAdjacentHTML(
+      refs.insertAdjacentHTML(
         'beforeend',
-        this.createMarkup(this.templates, this.datas.ua)
+        this.createMarkup(this.templates, datas.ua)
       );
     }
   }
@@ -34,16 +30,16 @@ export default class CreateMarkup {
     return markup.join('');
   }
   insertOtherData(refs, datas) {
-    this.refs = refs;
-    this.datas = datas;
     if (this.language === 'en') {
-      this.refs.textContent = this.datas.en;
+      refs.textContent = datas.en;
     } else if (this.language === 'ua') {
-      this.refs.textContent = this.datas.ua;
+      refs.textContent = datas.ua;
     }
   }
+  insertPhoto(refs, src) {
+    refs.src = src;
+  }
   clearMarkup(refs) {
-    this.refs = refs;
-    this.refs.innerHTML = '';
+    refs.innerHTML = '';
   }
 }

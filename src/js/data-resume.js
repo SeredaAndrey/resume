@@ -1,5 +1,6 @@
 const dataResume = {
   id: 1,
+  photo: 'http://195.72.145.106/andrii_sereda.jpg',
   name: {
     en: 'Andrii Sereda',
     ua: 'Андрій Середа',
@@ -75,7 +76,7 @@ const dataResume = {
       {
         id: 3,
         name: 'Underfloor heating controller v2.0 with MQTT',
-        tech: ['C++', 'ArduinoIDE'],
+        tech: ['C++', 'ArduinoIDE', 'HTML'],
         link: 'https://github.com/SeredaAndrey/controller_hot_flore-v2.0-with-MQTT',
       },
       {
@@ -125,7 +126,7 @@ const dataResume = {
       {
         id: 3,
         name: 'Контроллер управління теплою підлогою v2.0 with MQTT',
-        tech: ['C++', 'ArduinoIDE'],
+        tech: ['C++', 'ArduinoIDE', 'HTML'],
         link: 'https://github.com/SeredaAndrey/controller_hot_flore-v2.0-with-MQTT',
       },
       {
@@ -426,7 +427,7 @@ const dataResume = {
     ua: [
       {
         id: 1,
-        name: 'Прифзовський технічний державний універсітет (ПДТУ)',
+        name: 'Приaзовський технічний державний універсітет (ПДТУ)',
         profession: 'Промислове та цивільне будівництво',
         startDurationEdu: 'Вересень 1996',
         endDurationEdu: 'Червень 2002',
