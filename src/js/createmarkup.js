@@ -36,9 +36,9 @@ export default class CreateMarkup {
       refs.textContent = datas.ua;
     }
   }
-  insertPhoto(refs, src) {
-    refs.src = src;
-  }
+  // insertPhoto(refs, src) {
+  //   refs.src = src;
+  // }
   clearMarkup(refs) {
     refs.innerHTML = '';
   }

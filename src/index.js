@@ -29,7 +29,7 @@ loadMarkup();
 
 function loadMarkup() {
   createMarkup.insertOtherData(refs.name, dataResume.name);
-  createMarkup.insertPhoto(refs.photo, dataResume.photo);
+  // createMarkup.insertPhoto(refs.photo, dataResume.photo);
   createMarkup.insertOtherData(refs.profesion, dataResume.profesion);
   createMarkup.insertOtherData(refs.description, dataResume.description);
   createMarkup.insertMarkup(

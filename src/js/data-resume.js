@@ -1,6 +1,5 @@
 const dataResume = {
   id: 1,
-  photo: 'http://195.72.145.106/andrii_sereda.jpg',
   name: {
     en: 'Andrii Sereda',
     ua: 'Андрій Середа',
@@ -37,6 +36,12 @@ const dataResume = {
         title: 'resume web site',
         href: 'http://195.72.145.106',
       },
+      {
+        name: 'linkedin',
+        shotName: 'In:',
+        title: 'linkedin',
+        href: 'https://www.linkedin.com/in/andrii-sereda-06650925b/',
+      },
     ],
     ua: [
       {
@@ -56,6 +61,12 @@ const dataResume = {
         shotName: 'S:',
         title: 'web site резюме',
         href: 'http://195.72.145.106',
+      },
+      {
+        name: 'linkedin',
+        shotName: 'In:',
+        title: 'linkedin',
+        href: 'https://www.linkedin.com/in/andrii-sereda-06650925b/',
       },
     ],
   },
